@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="title">
+            <h2 style="font-size: 30px; "><em>EMPLOYEE MANAGEMENT SYSTEM</em></h2>
+        </div>
+
+        <form [formGroup]="loginForm">
+        <div class="form">
+            <h2>Login here</h2>
+            
+            <mat-form-field class="form-cd-rm" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input style="color: white;" matInput placeholder="Enter email" formControlName="email">
+                <mat-error>enter your email</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="form-cd-rm" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input style="color: white;" matInput placeholder="Enter password" formControlName="password">
+                <mat-error>enter your password</mat-error>
+            </mat-form-field>
+
+            <div class="message1">
+                Forgot Password?
+            </div>
+
+
+            <button class="btn"><a href="#">Login</a></button>
+            <button class="btn"><a href="#">close</a></button>
+        </div>
+    </form>
+
+
+    </div>
+</body>
+
+</html>

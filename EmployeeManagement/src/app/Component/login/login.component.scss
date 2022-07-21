@@ -1,0 +1,119 @@
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../../../assets/photo.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.form{
+    // border: 3px solid red;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    bottom: 110px;
+    left: 600px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family:sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+.form matInput{
+    // border: 2px solid green;
+    width: 240px;
+    height: 5px;
+    background: transparent;
+    // border-bottom: 1px solid orange;
+    color: white;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.message1{
+
+    font-size: 16px;
+    color: rgb(230, 105, 3);
+    // width: 100px;
+    margin-right: 78px;
+
+}
+
+mat-label{
+    // border: 3px solid red;
+    color: white;
+    // border: white;
+}
+
+.form-cd-rm{
+    // border: 1px solid red;
+    width: 100%;
+    margin-top: 20px;
+}
+.form input:focus{
+    outline: none;
+    // border: 3px solid red;
+    color: white;
+}
+::placeholder{
+    
+    color: #fff;
+    font-family: Arial;
+}
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.title{
+    // border: 1px solid red;
+    width: 90%;
+    top: 30px;
+    right: 200px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.title h2{
+    width: 600px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    // color: black;
+    background-color:white;
+    border-radius: 19px;
+    margin: 17px;
+    padding: 30px;
+    margin-left: 30%;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+}
