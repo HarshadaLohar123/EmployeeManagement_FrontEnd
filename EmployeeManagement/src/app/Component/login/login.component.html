@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Document</title>
-
-</head>
-
-<body>
     <div class="main">
 
-        <div class="title">
-            <h2 style="font-size: 30px; "><em>EMPLOYEE MANAGEMENT SYSTEM</em></h2>
-        </div>
+        <mat-toolbar color="primary">
+            <span>EMPLOYEE MANAGEMENT SYSTEM</span>
+        </mat-toolbar>
 
-        <form [formGroup]="loginForm">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form">
-            <h2>Login here</h2>
+            <h2>Admin Login</h2>
             
             <mat-form-field class="form-cd-rm" appearance="outline">
                 <mat-label>Email</mat-label>
@@ -31,13 +22,10 @@
 
     
 
-            <button class="btn"><a href="#">Login</a></button>
-            <button class="btn"><a href="#">close</a></button>
+            <button class="btn">Login</button>
+            <button class="btn" routerLink="/home">close</button>
         </div>
     </form>
 
 
     </div>
-</body>
-
-</html>

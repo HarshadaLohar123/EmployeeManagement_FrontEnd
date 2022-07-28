@@ -1,0 +1,46 @@
+<div class="main">
+    <p>
+        <mat-toolbar color="primary">
+            <span>EMPLOYEE MANAGEMENT SYSTEM</span>
+            <span class="example-spacer"></span>
+            <button mat-raised-button color="accent"(click)="openDialog()">Register</button>
+            <button mat-raised-button color="accent"routerLink="/home">Home</button>
+        </mat-toolbar>
+    </p><div class="container">
+        <div class="table">
+          <table class="table1">
+            <tr>
+              <th>EmployeeId</th>
+              <th>FirstName</th>
+              <th>LastName</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>EmpAddress</th>
+              <th>Gender</th>
+              <th>Position</th>
+              <th>Salary</th>
+              <th>PhoneNumber</th>
+              
+            </tr>
+            <tr *ngFor="let arr of dataSource">
+              <td>{{arr.employeeId}}</td>
+              <td>{{arr.firstName}}</td>
+              <td>{{arr.lastName}}</td>
+              <td> {{arr.email}}</td>
+              <td >{{arr.password}}</td>
+              <td >{{arr.empAddress}}</td>
+              <td >{{arr.gender}}</td>
+              <td >{{arr.position}}</td>
+              <td >{{arr.salary}}</td>
+              <td>{{arr.phoneNumber}}</td>
+              <div class="headbtn">
+                <td><button  class="editbtn" mat-icon-button (click)="updateEmployee(arr)"> <mat-icon>update</mat-icon> </button></td>
+                <td><button (click)="delete(arr)" class="deletebtn" mat-icon-button><mat-icon>delete</mat-icon></button></td>
+              </div>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+</div>
