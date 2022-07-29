@@ -40,12 +40,11 @@ export class LoginComponent implements OnInit {
         console.log(result);
         localStorage.setItem("token",result.data.token);
         this.router.navigateByUrl('/dashboard')  
-        
+        this.snackBar.open('Login Successfully..!!!', '..', {
+          duration: 3000,
+        })
       })
-      this.snackBar.open('Login Successfully..!!!', '..', {
-        duration: 3000,
-      })
-      
+    
     }
     else{
       console.log("invalid data",this.loginForm.value);

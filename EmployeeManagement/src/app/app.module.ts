@@ -23,10 +23,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { EmployeedetailsComponent } from './Component/employeedetails/employeedetails.component';
-
-
-
-
+import {MatExpansionModule} from '@angular/material/expansion';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +36,7 @@ import { EmployeedetailsComponent } from './Component/employeedetails/employeede
     EmployeedetailsComponent
   ],
   imports: [
-    BrowserModule,FlexLayoutModule,MatSnackBarModule,
+    BrowserModule,FlexLayoutModule,MatSnackBarModule,MatExpansionModule,
     AppRoutingModule,MatInputModule,MatCheckboxModule,MatToolbarModule,MatIconModule,FormsModule,MatSelectModule,
     BrowserAnimationsModule,MatFormFieldModule,ReactiveFormsModule,MatRadioModule,MatButtonModule,HttpClientModule,MatDialogModule,
    
