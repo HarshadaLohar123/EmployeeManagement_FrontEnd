@@ -1,0 +1,97 @@
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../../assets/photo.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.form{
+    // border: 3px solid red;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    bottom: 110px;
+    left: 600px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family:sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+.form matInput{
+    // border: 2px solid green;
+    width: 240px;
+    height: 5px;
+    background: transparent;
+    // border-bottom: 1px solid orange;
+    color: white;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+mat-label{
+    // border: 3px solid red;
+    color: white;
+    // border: white;
+}
+
+.form-cd-rm{
+    // border: 1px solid red;
+    width: 100%;
+    margin-top: 20px;
+}
+.form input:focus{
+    outline: none;
+    // border: 3px solid red;
+    color: white;
+}
+::placeholder{
+    
+    color: #fff;
+    font-family: Arial;
+}
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+mat-toolbar {
+    // border: 1px solid red;
+    height: 80px;
+    font-size: 36px;
+    line-height: 37px;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}

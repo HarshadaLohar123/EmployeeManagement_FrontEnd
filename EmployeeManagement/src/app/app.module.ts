@@ -12,6 +12,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
+import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { EmployeedetailsComponent } from './Component/employeedetails/employeedetails.component';
 
 
 
@@ -21,12 +32,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     RegisterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    EmployeeloginComponent,
+    EmployeedetailsComponent
   ],
   imports: [
-    BrowserModule,FlexLayoutModule,
-    AppRoutingModule,MatInputModule,MatCheckboxModule,
-    BrowserAnimationsModule,MatFormFieldModule,ReactiveFormsModule
+    BrowserModule,FlexLayoutModule,MatSnackBarModule,
+    AppRoutingModule,MatInputModule,MatCheckboxModule,MatToolbarModule,MatIconModule,FormsModule,MatSelectModule,
+    BrowserAnimationsModule,MatFormFieldModule,ReactiveFormsModule,MatRadioModule,MatButtonModule,HttpClientModule,MatDialogModule,
    
   ],
   providers: [],

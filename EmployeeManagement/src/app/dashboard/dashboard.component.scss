@@ -1,0 +1,81 @@
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../../assets/photo.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    // border: 1px solid red;
+    height: 80px;
+    font-size: 36px;
+    line-height: 37px;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+    font-style: normal;
+}
+  .container{
+    // border: 1px solid green;
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  }
+  table{
+    // border: 1px solid red;
+    width: 100%;
+    font-size: 19px;
+  }
+  .mat-form-field {
+    font-size: 15px;
+    width: 100%;
+  }
+  th{
+    // border: 1px solid red;
+    width: 150px;
+    background-color: palevioletred;
+    height: 40px;
+  }
+  td{
+    border: 1px solid black;
+    // box-shadow: 2px -0px 2px wheat;
+    color: white;
+    text-align: center;
+  }
+  .headbtn button{
+      // border: 1px solid red;
+      width: 60px;
+      height: 40px;
+  }
+  button {
+    // border: 2px solid yellow;
+    width: 110px;
+    height: 40px;
+    background: lightcoral;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 8px;
+}
+
+button:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+button a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+  

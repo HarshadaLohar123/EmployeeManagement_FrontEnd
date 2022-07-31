@@ -1,0 +1,21 @@
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../../../assets/photo.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    // border: 1px solid red;
+    height: 80px;
+    font-size: 36px;
+    line-height: 37px;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+    font-style: normal;
+}
