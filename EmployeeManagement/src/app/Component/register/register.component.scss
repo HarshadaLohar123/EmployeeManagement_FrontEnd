@@ -1,65 +1,58 @@
-.example-container .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-    
-    
-  }
-  .example-container .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-  
-  }
-  
-  .example-right-align {
-    text-align: right;
-  }
-  
-  input.example-right-align::-webkit-outer-spin-button,
-  input.example-right-align::-webkit-inner-spin-button {
-    display: none;
-  }
-  
-  input.example-right-align {
-    -moz-appearance: textfield;
-  }
-  #pass{
-    // border: 1px solid red;
-    width: 200px;
-  }
-  mat-form-field{
-    // border: 1px solid red;
-    margin: 5px;
-  }
-  
-  button {
-    // border: 2px solid red;
-    width: 100px;
-    height: 40px;
-    border: none;
-    margin-top: 10px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-
-    margin-left: 2px;
-
+.example-container .mat-form-field+.mat-form-field {
+  margin-left: 8px;
 }
 
-button:hover {
-    background: #fff;
-    color: #ff7200;
+.example-container .mat-form-field+.mat-form-field {
+  margin-left: 8px;
 }
 
-button a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+.example-right-align {
+  text-align: right;
 }
-.border button{
-    // border: 1px solid green;
-    margin-right: 30px;
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
 }
-.salary mat-form-field{
-  // border: 1px solid red;
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+#pass {
   width: 200px;
 }
 
-  
+mat-form-field {
+  margin: 5px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+button:hover {
+  background: #fff;
+  color: #ff7200;
+}
+
+button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.border button {
+  margin-right: 30px;
+}
+
+.salary mat-form-field {
+  width: 200px;
+}

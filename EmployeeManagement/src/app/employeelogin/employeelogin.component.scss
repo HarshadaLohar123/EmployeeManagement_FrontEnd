@@ -1,16 +1,15 @@
-.main{
+.main {
     width: 100%;
-    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../../assets/photo.webp);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../../assets/photo.webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
-
 }
-.form{
-    // border: 3px solid red;
+
+.form {
     width: 250px;
     height: 400px;
-    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
     position: absolute;
     bottom: 110px;
     left: 600px;
@@ -18,9 +17,9 @@
     padding: 25px;
 }
 
-.form h2{
+.form h2 {
     width: 220px;
-    font-family:sans-serif;
+    font-family: sans-serif;
     text-align: center;
     color: orange;
     font-size: 22px;
@@ -28,43 +27,39 @@
     border-radius: 10px;
     margin: 2px;
     padding: 8px;
-
 }
-.form matInput{
-    // border: 2px solid green;
+
+.form matInput {
     width: 240px;
     height: 5px;
     background: transparent;
-    // border-bottom: 1px solid orange;
     color: white;
-
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 30px;
     font-family: sans-serif;
 }
-mat-label{
-    // border: 3px solid red;
+
+mat-label {
     color: white;
-    // border: white;
 }
 
-.form-cd-rm{
-    // border: 1px solid red;
+.form-cd-rm {
     width: 100%;
     margin-top: 20px;
 }
-.form input:focus{
+
+.form input:focus {
     outline: none;
-    // border: 3px solid red;
     color: white;
 }
-::placeholder{
-    
+
+::placeholder {
     color: #fff;
     font-family: Arial;
 }
-.btn{
+
+.btn {
     width: 240px;
     height: 40px;
     background: #ff7200;
@@ -75,17 +70,19 @@ mat-label{
     cursor: pointer;
     color: white;
 }
-.btn:hover{
+
+.btn:hover {
     background: #fff;
     color: #ff7200;
 }
-.btn a{
+
+.btn a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
 }
+
 mat-toolbar {
-    // border: 1px solid red;
     height: 80px;
     font-size: 36px;
     line-height: 37px;

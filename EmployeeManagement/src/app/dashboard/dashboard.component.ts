@@ -12,12 +12,11 @@ import { AdminService } from '../Services/AdminService/admin.service';
 export class DashboardComponent implements OnInit {
   dataSource: any = [];
   token: any;
-  constructor(private dialog: MatDialog, private admin: AdminService) { }
+  constructor(private dialog: MatDialog, private adminservice: AdminService) { }
 
   ngOnInit(): void {
     this.token = localStorage.getItem("token");
     this.getAllEmployee();
-
   }
   openDialog() {
     this.dialog.open(RegisterComponent, {
@@ -31,7 +30,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getAllEmployee() {
-    this.admin.getallEmployee().subscribe(
+    this.adminservice.getallEmployee().subscribe(
       (response: any) => {
         console.log(response);
         this.dataSource = response.response;
@@ -40,7 +39,7 @@ export class DashboardComponent implements OnInit {
   }
 
   delete(data: any) {
-    this.admin.delete(data.employeeId).subscribe(res => {
+    this.adminservice.delete(data.employeeId).subscribe(res => {
       alert("Employee Deleted Successfully")
       this.getAllEmployee();
     })
@@ -57,5 +56,4 @@ export class DashboardComponent implements OnInit {
       }
     })
   }
-
 }

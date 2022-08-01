@@ -21,7 +21,6 @@ export class AdminService {
         'Authorization': 'Bearer ' + this.token
       })
     }
-    console.log(reqdata);
     return this.httpservice.postservices('Employee/AddEmployee', reqdata, true, header)
   }
 
@@ -31,25 +30,20 @@ export class AdminService {
         'Content-type': 'application/json',
       })
     }
-    console.log(reqdata);
     return this.httpservice.postservices(`Admin/AdminLogin`, reqdata, false, header)
   }
 
   getallEmployee() {
-   
-    console.log(this.token);
     let header = {
       headers: new HttpHeaders({
         'Content-type': 'application/json',
-        'Authorization': 'Bearer ' +this.token
+        'Authorization': 'Bearer ' + this.token
       })
     }
-    console.log(this.token);
     return this.httpservice.getService(`Employee/GetAllEmployee`, true, header)
   }
 
   delete(EmployeeId: any) {
-    console.log(EmployeeId);
     let header = {
       headers: new HttpHeaders({
         'Content-type': 'application/json',
@@ -60,15 +54,12 @@ export class AdminService {
   }
 
   updateEmployee(data: any, EmployeeId: any) {
-    console.log(this.token);
-    console.log(data, EmployeeId);
     let header = {
       headers: new HttpHeaders({
         'Content-type': 'application/json',
         'Authorization': 'Bearer ' + this.token
       })
     }
-    console.log(data, EmployeeId);
     return this.httpservice.putservices(`Employee/UpdateEmployee/${EmployeeId}`, data, true, header);
   }
 
@@ -78,7 +69,6 @@ export class AdminService {
         'Content-type': 'application/json',
       })
     }
-    console.log(reqdata);
     return this.httpservice.postservices(`EmployeeRole/EmployeeLogin`, reqdata, false, header)
   }
 }

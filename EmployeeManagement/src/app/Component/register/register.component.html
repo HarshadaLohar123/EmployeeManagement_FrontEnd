@@ -1,76 +1,75 @@
 <h2 mat-dialog-title>Register Employee</h2>
 <div mat-dialog-contant>
-   <form [formGroup]="registerForm">
+  <form [formGroup]="registerForm">
     <mat-form-field appearance="fill">
-        <mat-label>FirstName</mat-label>
-        <input formControlName="FirstName" matInput>
-      </mat-form-field>
+      <mat-label>FirstName</mat-label>
+      <input formControlName="FirstName" matInput>
+    </mat-form-field>
 
-      <mat-form-field appearance="fill">
-        <mat-label>LastName</mat-label>
-        <input formControlName="LastName" matInput>
-      </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>LastName</mat-label>
+      <input formControlName="LastName" matInput>
+    </mat-form-field>
 
     <div class="example-container">
-        <mat-form-field appearance="fill">
-          <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" formControlName="Email">
-     </mat-form-field>
-     
-        <mat-form-field id="pass" appearance="fill">
-          <mat-label>Enter your password</mat-label>
-          <input formControlName="Password" matInput [type]="hide ? 'password' : 'text'">
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
-        </mat-form-field>
-      </div>
-
       <mat-form-field appearance="fill">
-        <mat-label>EmpAddress</mat-label>
-        <input formControlName="EmpAddress" matInput>
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" formControlName="Email">
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
-        <mat-label>Gender</mat-label>
-        <mat-select formControlName="Gender" placeholder="Gender">
-            <mat-option value="Male">Male</mat-option>
-            <mat-option value="Female">Female</mat-option>
-        </mat-select>
-    </mat-form-field>
-
-      <mat-form-field appearance="fill">
-        <mat-label>DateOfBirth</mat-label>
-        <input formControlName="DateOfBirth" matInput>
+      <mat-form-field id="pass" appearance="fill">
+        <mat-label>Enter your password</mat-label>
+        <input formControlName="Password" matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
       </mat-form-field>
-   
-    <mat-form-field appearance="fill">
-        <mat-label>Position</mat-label>
-        <mat-select formControlName="Position" placeholder="Position">
-            <mat-option value="Sr.Manager"> Sr.Manager</mat-option>
-            <mat-option value="Jr.Manager">Jr.Manager</mat-option>
-            <mat-option value="sr.Developer">sr.Developer</mat-option>
-            <mat-option value="Jr.Developer">Jr.Developer</mat-option>
-            <mat-option value="Accountant">Accountant</mat-option>
-            <mat-option value="Assistant">Assistant</mat-option>
-            <mat-option value="sr.operator">sr.operator</mat-option>
-            <mat-option value="HR">HR</mat-option>
-        </mat-select>
-    </mat-form-field>
-    
+    </div>
 
     <mat-form-field appearance="fill">
-        <mat-label>Salary</mat-label>
-        <input formControlName="Salary" matInput>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>PhoneNumber</mat-label>
-        <input formControlName="PhoneNumber" matInput>
-      </mat-form-field>
-   </form>
+      <mat-label>EmpAddress</mat-label>
+      <input formControlName="EmpAddress" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Gender</mat-label>
+      <mat-select formControlName="Gender" placeholder="Gender">
+        <mat-option value="Male">Male</mat-option>
+        <mat-option value="Female">Female</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>DateOfBirth</mat-label>
+      <input formControlName="DateOfBirth" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Position</mat-label>
+      <mat-select formControlName="Position" placeholder="Position">
+        <mat-option value="Sr.Manager"> Sr.Manager</mat-option>
+        <mat-option value="Jr.Manager">Jr.Manager</mat-option>
+        <mat-option value="sr.Developer">sr.Developer</mat-option>
+        <mat-option value="Jr.Developer">Jr.Developer</mat-option>
+        <mat-option value="Accountant">Accountant</mat-option>
+        <mat-option value="Assistant">Assistant</mat-option>
+        <mat-option value="sr.operator">sr.operator</mat-option>
+        <mat-option value="HR">HR</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Salary</mat-label>
+      <input formControlName="Salary" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>PhoneNumber</mat-label>
+      <input formControlName="PhoneNumber" matInput>
+    </mat-form-field>
+  </form>
 </div>
 <div class="border" mat-dialog-action [align]="'end'">
-    <button style="margin-left: 6px;" mat-raised-button color="accent" (click)="registerEmployee()">{{actionBtn}}</button>
-    <button  mat-raised-button  color="accent" mat-dialog-close>Close</button>
-    
+  <button style="margin-left: 6px;" mat-raised-button color="accent" (click)="registerEmployee()">{{actionBtn}}</button>
+  <button mat-raised-button color="accent" mat-dialog-close>Close</button>
 </div>
