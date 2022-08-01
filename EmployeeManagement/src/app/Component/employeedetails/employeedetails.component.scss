@@ -5,11 +5,12 @@
     background-size: cover;
     height: 100vh;
 }
+
 .example-spacer {
     flex: 1 1 auto;
 }
+
 mat-toolbar {
-    // border: 1px solid red;
     height: 80px;
     font-size: 36px;
     line-height: 37px;
@@ -17,8 +18,8 @@ mat-toolbar {
     font-weight: 600;
     font-style: normal;
 }
+
 .btn {
-    // border: 2px solid yellow;
     width: 110px;
     height: 40px;
     background: #ff4081;
@@ -30,37 +31,42 @@ mat-toolbar {
     color: white;
     margin-left: 8px;
 }
+
 .btn:hover {
     background: #fff;
     color: #ff7200;
 }
+
 .btn a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
 }
+
 .mat-form-field+.mat-form-field {
     margin-left: 8px;
 }
+
 mat-expansion-panel {
-    // border: 2px solid red;
+    border: 2px solid red;
     width: 50%;
+    background-color: #ff4081;
 }
+
 .box {
-    // border: 1px solid black;
     height: 80%;
     display: flex;
     justify-content: center;
 }
+
 mat-panel-title {
-    // border: 1px solid red;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.013em;
     font-weight: 600;
 }
-p{
-    // border: 1px solid red;
+
+p {
     font-size: 24px;
     line-height: 39px;
     letter-spacing: 0.012em;

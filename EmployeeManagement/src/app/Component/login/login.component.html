@@ -1,13 +1,13 @@
-    <div class="main">
+<div class="main">
 
-        <mat-toolbar color="primary">
-            <span>EMPLOYEE MANAGEMENT SYSTEM</span>
-        </mat-toolbar>
+    <mat-toolbar color="primary">
+        <span>EMPLOYEE MANAGEMENT SYSTEM</span>
+    </mat-toolbar>
 
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form">
             <h2>Admin Login</h2>
-            
+
             <mat-form-field class="form-cd-rm" appearance="outline">
                 <mat-label>Email</mat-label>
                 <input style="color: white;" matInput placeholder="Enter email" formControlName="email">
@@ -20,12 +20,8 @@
                 <mat-error>enter your password</mat-error>
             </mat-form-field>
 
-    
-
             <button class="btn">Login</button>
             <button class="btn" routerLink="/home">close</button>
         </div>
     </form>
-
-
-    </div>
+</div>

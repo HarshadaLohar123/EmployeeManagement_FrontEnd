@@ -13,7 +13,7 @@ export class EmployeeloginComponent implements OnInit {
   loginForm!: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder, private admin: AdminService, private router: Router, private snackBar: MatSnackBar) { }
+  constructor(private formBuilder: FormBuilder, private adminservice: AdminService, private router: Router, private snack: MatSnackBar) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -30,9 +30,9 @@ export class EmployeeloginComponent implements OnInit {
         email: this.loginForm.value.email,
         password: this.loginForm.value.password
       }
-      this.admin.employeelogin(reqData).subscribe((result: any) => {
+      this.adminservice.employeelogin(reqData).subscribe((result: any) => {
         console.log(result);
-        this.snackBar.open('Login Successfully..!!!', '..', {
+        this.snack.open('Login Successfully..!!!', '..', {
           duration: 3000,
         })
         this.router.navigateByUrl('/employeedetails')
