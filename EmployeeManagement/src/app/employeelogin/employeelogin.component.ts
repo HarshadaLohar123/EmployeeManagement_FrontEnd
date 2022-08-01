@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { AdminService } from '../Services/AdminService/admin.service';
+import { EmployeeserviceService } from '../Services/employeeservice.service';
 
 @Component({
   selector: 'app-employeelogin',
@@ -12,8 +13,8 @@ import { AdminService } from '../Services/AdminService/admin.service';
 export class EmployeeloginComponent implements OnInit {
   loginForm!: FormGroup;
   submitted = false;
-
-  constructor(private formBuilder: FormBuilder, private adminservice: AdminService, private router: Router, private snack: MatSnackBar) { }
+  token: any;
+  constructor(private formBuilder: FormBuilder, private adminservice: AdminService, private router: Router, private snack: MatSnackBar, private employee: EmployeeserviceService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -30,8 +31,9 @@ export class EmployeeloginComponent implements OnInit {
         email: this.loginForm.value.email,
         password: this.loginForm.value.password
       }
-      this.adminservice.employeelogin(reqData).subscribe((result: any) => {
+      this.employee.employeelogin(reqData).subscribe((result: any) => {
         console.log(result);
+        localStorage.setItem('employeetoken',result.token);
         this.snack.open('Login Successfully..!!!', '..', {
           duration: 3000,
         })
