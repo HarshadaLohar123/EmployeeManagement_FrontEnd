@@ -63,12 +63,5 @@ export class AdminService {
     return this.httpservice.putservices(`Employee/UpdateEmployee/${EmployeeId}`, data, true, header);
   }
 
-  employeelogin(reqdata: any) {
-    let header = {
-      headers: new HttpHeaders({
-        'Content-type': 'application/json',
-      })
-    }
-    return this.httpservice.postservices(`EmployeeRole/EmployeeLogin`, reqdata, false, header)
-  }
+  
 }
