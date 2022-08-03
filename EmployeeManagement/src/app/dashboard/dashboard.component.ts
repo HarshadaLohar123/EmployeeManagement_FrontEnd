@@ -1,6 +1,7 @@
 import { Token } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RegisterComponent } from '../Component/register/register.component';
 import { AdminService } from '../Services/AdminService/admin.service';
 
@@ -12,7 +13,7 @@ import { AdminService } from '../Services/AdminService/admin.service';
 export class DashboardComponent implements OnInit {
   dataSource: any = [];
   token: any;
-  constructor(private dialog: MatDialog, private adminservice: AdminService) { }
+  constructor(private dialog: MatDialog, private adminservice: AdminService,private router: Router,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.token = localStorage.getItem("token");
@@ -23,6 +24,11 @@ export class DashboardComponent implements OnInit {
       width: '32%',
       height: '75%',
     }).afterClosed().subscribe(val => {
+      this.router.routeReuseStrategy.shouldReuseRoute=()=>false;
+      this.router.onSameUrlNavigation="reload";
+      this.router.navigate(["./dashboard"]),{
+        relativeTo:this.route
+      }
       if (val === 'Save') {
         this.getAllEmployee();
       }
@@ -33,7 +39,7 @@ export class DashboardComponent implements OnInit {
     this.adminservice.getallEmployee().subscribe(
       (response: any) => {
         console.log(response);
-        this.dataSource = response.response;
+        this.dataSource = response.response.reverse();
         console.log(this.dataSource);
       })
   }

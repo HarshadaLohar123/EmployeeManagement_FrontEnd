@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AdminService } from 'src/app/Services/AdminService/admin.service';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,6 +15,7 @@ export class RegisterComponent implements OnInit {
   hide = true;
   token: any;
   employeeId: any;
+
 
   constructor(private formBuilder: FormBuilder, private adminservice: AdminService,
     @Inject(MAT_DIALOG_DATA) public updateData: any,
@@ -68,7 +70,6 @@ export class RegisterComponent implements OnInit {
     else {
       this.updateEmployee()
     }
-
   }
   updateEmployee() {
     this.adminservice.updateEmployee(this.registerForm.value, this.updateData.employeeId).subscribe({
